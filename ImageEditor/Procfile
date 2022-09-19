@@ -1,1 +1,1 @@
-worker: Ruby index.html
+worker: Ruby index.php
