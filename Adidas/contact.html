@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Contact</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/contact.css">
+    <link href="https://fonts.googleapis.com/css2?family=Muli:wght@200&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="grid-container">
+        <div class="header">
+            <h1>ADIDAS</h1>
+        </div>
+
+        <div id="slideshow">
+            <div class="slide">
+                <img src="images/slideshow/slide1.jpg">
+            </div>
+
+            <div class="slide">
+                <img src="images/slideshow/slide2.jpg">
+            </div>
+
+            <div class="slide">
+                <img src="images/slideshow/slide3.jpg">
+            </div>
+        </div>
+
+        <div id="navigation">
+            <ul>
+                <li><a href="index.html">Pocetna</a></li>
+                <li><a href="contact.html">Kontakt</a></li>
+                <li><a href="location.html">Lokacija</a></li>
+            </ul>
+        </div>
+
+        <div id="main-section">
+            <h1 style="text-align:center;">Contact Us</h1>
+            <form name="forma" action="index.html" onsubmit="return proveraForme()" method="post">
+                Ime:
+                <input type="text" name="fname">
+                <h3 id="info-tekst1"></h3>
+                Godiste:
+                <input type="text" name="fgodiste">
+                <h3 id="info-tekst2"></h3>
+                Email:
+                <input type="email" name="femail">
+                <h3 id="info-tekst3"></h3>
+                Poruka:
+                <input type="text" name="fporuka">
+                <h3 id="info-tekst4"></h3>
+                <input type="submit" value="Send">
+                <h3 id="tekst"></h3>
+            </form>
+        </div>
+
+        <div id="footer">
+            <p>Copyright © 2020 Univerzitet Sinergija, Bijeljina</p>
+
+        </div>
+    </div>
+
+    <script type="text/javascript" src="js/slider.js"></script>
+    <script type="text/javascript" src="js/contact.js"></script>
+</body>
+
+</html>
