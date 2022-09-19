@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Contact</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="stylesheet" href="css/contact.css">  
+  <link href="https://fonts.googleapis.com/css2?family=Muli&family=Ubuntu+Condensed&display=swap" rel="stylesheet"> 
+</head>
+
+<body>
+
+  <div class="grid-container">
+ <!-- Navigation -->
+ <div id="navigation">
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="location.html">Location</a></li>
+  </ul>
+</div>
+    <!-- Slideshow -->
+    <div id="slideshow">
+      <div class="slide">
+        <img src="images/slideshow/slide1.jpg">
+      </div>
+
+      <div class="slide">
+        <img src="images/slideshow/slide2.jpg">
+      </div>
+
+      <div class="slide">
+        <img src="images/slideshow/slide3.jpg">
+      </div>
+    </div>
+
+     <!-- Header -->
+     <div id="header">
+        <h1>NIKE</h1>
+      </div>
+
+    <!-- Main -->
+    <div id="main-section">
+      <h1 style="text-align:center;">Contact Us</h1>
+      <form name="forma" action="index.html" onsubmit="return validacijaForme()" method="post">
+        Ime:
+        <input type="text" name="fname">
+        <h3 id="info-tekst1"></h3>
+        Godine:
+        <input type="number" name="fage" value=30>
+        <h3 id="info-tekst2"></h3>
+        Email:
+        <input type="email" name="femail">
+        <h3 id="info-tekst3"></h3>
+        Poruka:
+        <input type="text" name="fporuka">
+        <h3 id="info-tekst4"></h3>
+        <input type="submit" value="Posalji">
+        <h3 id="tekst"></h3>
+      </form>
+    </div>
+
+    <!-- Footer -->
+    <div id="footer">
+      <p>Copyright © 2020 Univerzitet Sinergija, Željka Tešić</p>
+    </div>
+
+  </div>
+
+    <script type="text/javascript" src="js/slider.js"></script> 
+    <script type="text/javascript" src="js/contact.js"></script> 
+</body>
+
+</html>

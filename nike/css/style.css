@@ -1,0 +1,141 @@
+body {
+    font-family: 'Muli', sans-serif;
+}
+* {
+    box-sizing: border-box;
+}
+.grid-container {
+    
+    display: grid;
+    
+    grid-template-areas: 
+      'nav        nav       nav'    
+      'slider     slider    slider'        
+      'header     header    header'              
+      'left       right     right'             
+      'footer     footer    footer';    
+  
+    grid-gap: 10px;
+
+    grid-template-rows: auto auto auto auto auto;
+  }
+
+/* Navigation */
+#navigation {
+    grid-area: nav;
+    background-color: #ccad8f;
+    text-align: left;
+    font-size: 20px;
+}
+
+#navigation li {
+    display: inline;
+}
+
+#navigation a {
+    text-decoration: none;
+    padding: 20px;
+    color: black;
+  }
+
+#navigation li a:hover {
+    background-color: black;
+    color: white;
+  }
+#slideshow {
+    grid-area: slider;
+    background-color: firebrick;
+    color: white;
+    text-align: center;
+}
+
+.slide img {
+    width: 100%;
+    max-height: 700px;
+    display: block;
+}
+#header {
+    
+    grid-area: header;
+    background-color: #b3001b;
+    color: white;
+    text-align: center;
+}
+#left-section {
+
+    grid-area: left;
+    background-color: #262626;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+#left-section a {
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+
+@media (min-width: 900px) {
+  .cards { grid-template-columns: repeat(1, 1fr); }
+}
+  
+@media (min-width: 1200px) {
+    .cards { grid-template-columns: repeat(2, 1fr); }
+}
+
+#right-section {
+    
+    grid-area: right;
+    background-color: #255c99;
+    padding: 10px;
+    color: white;
+    text-align: center;
+}
+.card {
+    padding: 20px;
+    height: auto;
+  }
+  
+.cards {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-gap: 16px;
+  }
+#footer {
+    
+    grid-area: footer;
+    background-color: #7ea3cc;
+    text-align: center;
+    padding: 10px;
+}
+@media (max-width: 600px) {
+    .grid-container  {
+      grid-template-areas: 
+        'header'
+        'nav'
+        'left'       
+        'right'       
+        'footer'; 
+    }
+    #slideshow {
+        display: none;
+      }
+
+#navigation ul {
+    padding: 0;
+  }
+  
+#navigation li {
+    padding: 10px;
+    display: block;
+  }
+
+#navigation a {
+    padding: 0;
+    text-decoration: none;
+  }
+}
