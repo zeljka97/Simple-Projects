@@ -1,0 +1,531 @@
+@mixin media-sm {
+    @media screen and (max-width: 410px) {
+        @content;
+    }
+}
+
+@mixin media-md {
+    @media screen and (max-width: 766px) {
+        @content;
+    }
+}
+
+@mixin media-lg {
+    @media screen and (max-width: 1054px) {
+        @content;
+    }
+}
+
+@include media-sm {
+    .hero {
+        .hero-container {
+
+            h1 {
+                font-weight: 400;
+                font-size: 1.7rem;
+                line-height: 2.5rem;
+                margin: 0 2rem;
+                position: relative;
+                top: 3rem;
+            }
+
+            p {
+                display: none;
+            }
+        }
+    }
+
+    .rating {
+
+        .rt__item img {
+            max-width: 50% !important;
+        }
+    }
+
+
+    .companies {
+        h2 {
+            margin-bottom: 0rem;
+        }
+
+        &__text p {
+            display: none;
+        }
+
+        &__logo img {
+            margin: 0rem auto;
+            max-width: 30% !important;
+        }
+    }
+
+    .about-hr {
+        margin-top: 2rem;
+        overflow: hidden;
+
+        .about-content {
+            flex-direction: column;
+            margin: 0 1rem;
+            overflow: hidden;
+        }
+    }
+
+
+    .course-content__card {
+        margin: 1rem;
+        overflow: hidden;
+
+    }
+
+    .search {
+        h2 {
+            display: none;
+        }
+
+        .srch-content__card {
+            margin: 0 1rem 0;
+            flex-direction: column;
+            overflow: hidden;
+
+
+            & button {
+                margin: 1rem;
+                padding: 1rem;
+            }
+
+            & img {
+                max-width: 15rem;
+                margin-top: 2rem;
+
+            }
+        }
+    }
+
+    .employees {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .empl-content__employee {
+            flex-direction: column;
+
+            & img {
+                margin-top: 1rem;
+            }
+        }
+
+        .award {
+            max-width: 92% !important;
+            overflow: hidden;
+            margin-top: 1rem;
+        }
+    }
+
+    .isa {
+        margin-top: 1rem !important;
+
+        h2 {
+            display: none;
+        }
+
+        .isa-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+
+            & img {
+                max-width: 18rem;
+            }
+
+            & p {
+                margin-bottom: 1rem;
+            }
+
+            & button {
+                margin: 0 auto !important;
+            }
+        }
+    }
+
+    .alumni-content {
+        flex-direction: column;
+        overflow: hidden;
+        max-width: 97%;
+
+        &__card {
+            margin-top: 1rem;
+            max-width: 97%;
+        }
+    }
+
+    .profession {
+        h2 {
+            display: none;
+        }
+
+        .profession-content__card {
+            flex-direction: column;
+            max-width: 85%;
+            margin: 0 auto;
+
+            & img {
+                width: 100%;
+                max-width: 100%;
+            }
+
+            & button {
+                margin-bottom: 1rem;
+            }
+
+        }
+    }
+
+    .footer-cntnt__item1 {
+        flex-direction: column;
+
+        & img {
+            margin-bottom: 1rem;
+        }
+
+        &--right {
+            border-top: 1px solid rgba(102, 219, 255, 0.2);
+            padding-top: 0.7rem;
+            max-width: 90% !important;
+            margin: 1.5rem 1rem 0;
+        }
+    }
+
+    .footer-cntnt__item2 {
+        flex-direction: column;
+        align-items: center;
+
+        &--row {
+            text-align: center;
+            width: 90% !important;
+            border-bottom: 1px solid rgba(102, 219, 255, 0.2);
+            padding-right: 0rem !important;
+            margin-top: 1rem;
+        }
+
+        &--column {
+            align-items: center;
+            max-width: 90% !important;
+
+            & p {
+                margin-top: 1rem;
+            }
+        }
+
+        &--column1 {
+            padding-top: 1rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            width: 90% !important;
+            border-bottom: 1px solid rgba(102, 219, 255, 0.2);
+
+            & a {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    }
+
+    .footer-cntnt__item3 {
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+
+        .paragraph p {
+            max-width: 12rem;
+            margin: 0 1rem;
+        }
+
+    }
+
+
+}
+
+
+@include media-md {
+    .hero {
+        .hero-container {
+
+            h1 {
+                font-weight: 400;
+                font-size: 1.7rem;
+                line-height: 2.5rem;
+                margin: 0 1rem;
+                position: relative;
+                top: 3rem;
+
+            }
+
+            p {
+                display: none;
+            }
+        }
+    }
+
+    .companies__text p {
+        display: none;
+    }
+
+    .companies__logo img {
+        margin: 0 auto;
+        max-width: 30% !important;
+    }
+
+    .about-content {
+        flex-direction: column;
+        margin: 0 2rem;
+
+        &__right {
+            margin-top: 1.5rem !important;
+        }
+    }
+
+    .course-content {
+        flex-direction: column;
+
+        .course-content__card {
+            margin-top: 1rem;
+
+            & img {
+                max-width: 100%;
+            }
+        }
+    }
+
+    .search h2 {
+        display: none;
+    }
+
+    .srch-content__card {
+        flex-direction: column;
+        margin: 0 2rem;
+
+
+        & img {
+            width: 19rem;
+            object-fit: cover;
+        }
+
+        & button {
+            margin-bottom: 1rem;
+        }
+    }
+
+    .employees {
+        display: flex;
+        flex-direction: column;
+
+        .award {
+            max-width: 92% !important;
+            margin: 1rem auto 0;
+
+            & img {
+                max-width: 18rem;
+            }
+
+            & p {
+                padding: 1rem 0;
+            }
+        }
+    }
+
+    .isa-content {
+        margin: 1rem 2rem;
+        padding: 1rem;
+        flex-direction: column;
+
+        & img {
+            max-width: 20rem;
+        }
+
+        & button {
+            margin: 0 !important;
+        }
+    }
+
+    .alumni-content {
+        flex-direction: column;
+
+        &__card {
+            margin-top: 1rem;
+        }
+    }
+
+
+    .profession-content__card {
+        margin: 0 1rem;
+        flex-direction: column;
+
+        & img {
+            height: 13.5rem;
+            max-width: 100%;
+            object-fit: cover;
+        }
+
+        &--p h3 {
+            margin-top: 1rem;
+        }
+
+        & button {
+            margin-bottom: 1rem;
+            margin-top: 1rem;
+        }
+    }
+
+    .footer-cntnt__item1 {
+        flex-direction: column;
+
+        & img {
+            margin-bottom: 1rem;
+        }
+
+        &--right {
+            border-top: 1px solid rgba(102, 219, 255, 0.2);
+            padding-top: 0.7rem;
+            max-width: 90% !important;
+            margin: 1.5rem 1rem 0;
+        }
+    }
+
+    .footer-cntnt__item2 {
+        flex-direction: column;
+        align-items: center;
+
+        &--row {
+            text-align: center;
+            width: 90% !important;
+            border-bottom: 1px solid rgba(102, 219, 255, 0.2);
+            padding-right: 0rem !important;
+            margin-top: 1rem;
+        }
+
+        &--column {
+            align-items: center;
+            max-width: 90% !important;
+            margin-left: 1.3rem !important;
+
+            & p {
+                margin-top: 1rem;
+            }
+        }
+
+        &--column1 {
+            padding-top: 1rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            width: 90% !important;
+            border-bottom: 1px solid rgba(102, 219, 255, 0.2);
+
+            & a {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    }
+
+    .footer-cntnt__item3 {
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+
+        .paragraph p {
+            margin: 0 1rem;
+        }
+
+    }
+}
+
+@include media-lg {
+
+    .hero-container h1 {
+        font-weight: 400;
+    }
+
+    .companies__text p {
+        margin: 0 2rem;
+    }
+
+    .about-content {
+        flex-direction: column;
+        margin: 0 1rem;
+
+        & img {
+            max-width: 100% !important;
+        }
+    }
+
+    .course-content__card {
+        margin-top: 1rem;
+    }
+
+    .srch-content__card {
+        margin: 0 1.5rem;
+    }
+
+    .employees {
+        flex-direction: column;
+
+        .award {
+            margin: 1rem auto 0;
+            max-width: 92% !important;
+
+            & p {
+                padding: 1rem 2rem 2rem;
+            }
+        }
+    }
+
+    .alumni-content__card {
+        margin-top: 1rem;
+    }
+
+    .isa-content {
+        margin: 0 1.5rem;
+    }
+
+    .profession-content__card {
+        margin: 0 1.5rem;
+
+        &--p {
+            margin: 0rem 1rem !important;
+        }
+    }
+
+    .footer-cntnt {
+        
+        &__item1 {
+            padding: 0 2rem;
+        }
+
+        &__item2 {
+            &--row {
+                margin-left: 2rem;
+                margin-top: 1rem;
+                padding-right: 1rem !important;
+            }
+
+            &--column {
+                margin-left: 3rem;
+
+                & p {
+                    margin-top: 1rem;
+                }
+            }
+        }
+    }
+
+    .paragraph p {
+        margin: 0 1rem 1rem;
+
+    }
+
+}
