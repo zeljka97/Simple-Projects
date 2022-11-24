@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Roboto&display=swap');
+@import 'responsive';
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+nav {
+    background-color: #fff;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+    .nav-menu {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .nav-left {
+            margin: 0.7rem 0.9rem;
+
+            & ul {
+                list-style-type: none;
+            }
+
+            & li {
+                padding: .5rem 1rem;
+
+                &:hover {
+                    background-color: #f1f1f1;
+                }
+            }
+
+            & a {
+                letter-spacing: 0.3rem;
+                font-size: 0.9rem;
+                color: #000;
+                text-decoration: none;
+            }
+        }
+
+        .nav-right {
+            margin: 0.7rem 0.9rem;
+
+            & ul {
+                list-style-type: none;
+            }
+
+            & li {
+                padding: .5rem 1rem;
+                display: inline;
+
+                &:hover {
+                    background-color: #f1f1f1;
+                }
+            }
+
+            & a {
+                letter-spacing: 0.3rem;
+                font-size: 0.9rem;
+                color: #000;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    .catering-bottom {
+        position: absolute;
+        bottom: 2rem;
+        left: 1.5rem;
+        font-family: 'Playfair';
+
+        & h1 {
+            letter-spacing: 0.3rem;
+            color: rgb(99, 97, 97);
+            font-weight: 400;
+        }
+    }
+}
+
+#about {
+    max-width: 68rem;
+    margin: 0 auto;
+    padding: 4rem 0;
+
+    .about-content {
+        display: flex;
+        justify-content: center;
+
+        &__left {
+            display: flex;
+            padding: 0.75rem 1.5rem;
+
+            & img {
+                max-width: 100%;
+                opacity: 0.75;
+                border-radius: 0.25rem;
+            }
+        }
+
+
+        &__right {
+            padding: 0.75rem 1.5rem;
+            flex: 59%;
+
+            & h1 {
+                text-align: center;
+                font-family: 'Playfair';
+                letter-spacing: 0.3rem;
+                font-weight: 400;
+                font-size: 2.25rem;
+                margin: 0.625rem auto 3rem;
+            }
+
+            & h5 {
+                text-align: center;
+                font-family: 'Playfair';
+                letter-spacing: 0.3rem;
+                font-weight: 400;
+                margin: 0.625rem auto;
+                font-size: 1.125rem;
+            }
+
+            & p {
+                font-size: 1.125rem;
+                margin: 1.2rem 0 0;
+                line-height: 1.5;
+
+                & span {
+                    background-color: #f1f1f1;
+                    padding: 0.5rem;
+                }
+            }
+
+            &--gray {
+                color: #757575;
+            }
+        }
+    }
+}
+
+
+hr {
+    border: none;
+    border-top: 1px solid #eee;
+    margin: 1.25rem auto;
+    max-width: 68rem;
+}
+
+#menu {
+    max-width: 68rem;
+    margin: 0 auto;
+    padding: 4rem 0;
+
+    .menu-content {
+        display: flex;
+        justify-content: center;
+
+        &__right {
+            padding: 0.75rem 1.5rem;
+
+            & img {
+                max-width: 100%;
+                opacity: 0.75;
+                border-radius: 0.25rem;
+            }
+        }
+
+        &__left {
+            padding: 0.75rem 1.5rem;
+            flex: 50%;
+
+            & h1 {
+                text-align: center;
+                font-family: 'Playfair';
+                letter-spacing: 0.3rem;
+                font-weight: 400;
+                font-size: 2.25rem;
+                margin: 0.625rem 0 3rem;
+            }
+
+            & h4 {
+                font-family: 'Playfair';
+                letter-spacing: 0.3rem;
+                font-weight: 400;
+                margin: 0.625rem auto;
+                font-size: 1.25rem;
+            }
+
+            & p {
+                font-size: 0.95rem;
+                margin: 0.93rem 0 3rem;
+                line-height: 1.5;
+                color: #757575;
+            }
+        }
+    }
+}
+
+#contact {
+    max-width: 68rem;
+    margin: 0 auto;
+    padding: 4rem 1rem;
+
+    .contact-content {
+        display: flex;
+        flex-direction: column;
+
+        & h1 {
+            margin: 0.625rem 0rem 2.5rem;
+            font-family: 'Playfair';
+            letter-spacing: 0.3rem;
+            font-weight: 400;
+            font-size: 2.25rem;
+        }
+
+        & p {
+            font-size: 1rem;
+            margin: 1rem 0 0;
+            line-height: 1.5;
+        }
+
+        &--gray {
+            margin: .5rem 0 .5rem;
+            color: #607d8b;
+
+            & p {
+                padding: 0;
+                font-size: 1.125rem;
+                font-weight: 700;
+            }
+        }
+
+        &__input {
+            padding: 1.1rem .5rem;
+            border: none;
+            border-bottom: 1px solid #ccc;
+            width: 100%;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 1rem;
+        }
+
+        & button {
+            margin: 1rem 0;
+            padding: .7rem 1rem;
+            background-color: #f1f1f1;
+            border: none;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 1rem;
+        }
+    }
+}
+
+footer {
+    padding: 2rem 0;
+    display: flex;
+    background-color: #f1f1f1;
+
+    & p {
+        margin: 1rem auto;
+
+        & a {
+            color: #000;
+        }
+    }
+}
